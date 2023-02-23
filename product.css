@@ -1,0 +1,43 @@
+/* *{
+    height: 0px;
+    width: 0px;
+} */
+
+
+
+#container {
+    margin-top: 25px;
+    width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        text-align: center;
+    }
+        
+
+
+
+
+#container div {
+    /* border: 1px solid red; */
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#container div img {
+    width: 50%;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+
+}
+
+#container div button{
+    /* border: 1px solid red; */
+    color: black;
+    background-color:green;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
