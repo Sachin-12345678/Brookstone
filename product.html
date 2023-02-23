@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrookTool</title>
+    <style>
+        
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            width: 50%;
+
+        }
+        #container div{
+            /* border: 10px solid red; */
+            width: 100%;
+        }
+
+#container div img{
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+  <div id="container">
+
+  </div>
+</body>
+</html>
+<script>
+
+let container=document.getElementById("container");
+console.log(container)
+
+
+fetch('https://63c7bcdd5c0760f69abce598.mockapi.io/products')
+  .then(response => response.json())
+
+  .then((data)=>{
+    console.log(data)
+    renderData(data)
+  })
+
+  .catch(error =>
+   console.error(error));
+
+
+   function renderData(data){
+data.forEach((element,index)=>{
+    let card=document.createElement("div")
+
+    let id=document.createElement("h3");
+    id.textContent=element.id;
+
+    let img=document.createElement("img")
+     img.src=element.avatar
+
+    let description=document.createElement("p")
+    description.textContent=element.description;
+
+    let title=document.createElement("h3")
+    title.textContent=element.title;
+
+    let price=document.createElement("h4")
+    price.textContent=element.price;
+
+    card.append(id,img,description,title,price)
+    container.append(card)
+})
+
+   }
+
+</script>
