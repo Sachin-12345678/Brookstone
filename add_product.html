@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Products</title>
+    <link rel="stylesheet" href="/admin.css">
+    <style>
+        .formDiv{
+            width: 40%;
+            /* border: solid red; */
+            /* margin: auto; */
+            margin-left: 200px;
+            margin-top: 50px;
+            line-height: 40px;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            border-radius: 10px;
+            background-color: #287affac;
+            color: white;
+
+
+        }
+        .formDiv input{
+            width: 90%;
+            padding: 10px;
+        }
+        select{
+            padding: 10px;
+        }
+        button{
+            padding: 10px;
+            border: none;
+            margin-top: 50px;
+            width: 80%;
+            border-radius: 25px;
+            background-color: white;
+            color: #287aff;
+            font-weight: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <!-- logo -->
+        <h2>Master Admin</h2>
+        <a href=""><span id="profile"><ion-icon name="person-circle-outline"></ion-icon></span></a>
+    </div>
+    <div class="main">
+        <div class="left">
+            <ul>
+                <li>
+                    <a href="/admin.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title"> Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/products.html">
+                        <span class="icon"><ion-icon name="bag-handle-outline"></ion-icon></span>
+                        <span class="title">Manage Products</span> 
+                    </a>                    
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="bag-add-outline"></ion-icon></span>
+                         <span class="title">Add Products</span> 
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="person-add-outline"></ion-icon></span>
+                        <span class="title">Add User</span> 
+                    </a>                    
+                </li>                
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Logout</span> 
+                    </a>
+                    
+                </li>               
+
+            </ul>
+        </div>
+    </div>
+    <div class="right">
+        <div class="menu icon">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div> 
+        <div class="formDiv">
+            <h3>Add Product</h3>
+            <form >
+                <label for="category">Select Category</label>
+                <select name="category">
+                    <option value="">Select Category</option>
+                    <option value="Kitchen">Kitchen</option>
+                    <option value="Lighting">Lighting</option>
+                    <option value="Furniture">Furniture</option>
+                    <option value="Bathroom">Bathroom</option>
+                    <option value="Air Quality">Air Quality</option>               
+                </select>
+                <br>
+                <label for="title">Title</label>
+                <input type="text" placeholder="Enter Title..">
+                <label for="">Price</label>
+                <input type="text" placeholder="Enter Price..">
+                <label for="">Image URL</label>
+                <input type="text" placeholder="URL">
+                <button>Submit</button>
+            </form>
+        </div> 
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="/admin.js"></script>
+</body>
+</html>
