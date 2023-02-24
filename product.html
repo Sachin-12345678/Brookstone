@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrookTool</title>
+    <link rel="stylesheet" href="product.css">
+    <style>
+        /* #container {
+            width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 10px;
+
+        }
+
+        #container div {
+            /* border: 10px solid red; */
+            /* width: 100%;
+        } */
+
+        /* #container div img {
+            width: 100%;
+        } */ 
+    </style>
+</head>
+
+<body>
+
+    <label for="price" id="sort">
+        <button id="high">high-to-low</button>
+        <button id="low">Low-to-high</button>
+
+    </label>
+
+
+
+    <select id="filter">
+        <option value="">Filter By Category</option>
+        <option value="Kitchen">Kitchen</option>
+        <option value="Lighting">Lighting</option>
+        <option value="Furniture">Furniture</option>
+        <option value="Bathroom">Bathroom</option>
+        <option value="Air Quality">Air Quality</option>
+        <option value="Home Products">Home Products</option>
+        <option value="Pet">Pet</option>
+    </select>
+
+    <div id="container">
+    </div>
+</body>
+
+</html>
+<script src="product.js">
+    // let container = document.getElementById("container");
+
+    // let arr = [];
+
+    // let high = document.getElementById("high");
+
+
+    // high.addEventListener('click', () => {
+    //     container.innerHTML = null;
+    //     let hSort = arr.sort((a, b) => b.price - a.price);
+    //     renderData(hSort)
+
+    // })
+
+    
+    // let low= document.getElementById("low");
+
+
+    // low.addEventListener('click', () => {
+    //     container.innerHTML = null;
+    //     let lSort = arr.sort((a, b) => a.price - b.price);
+    //     renderData(lSort)
+
+    // })
+
+
+    // let filterSelect = document.getElementById("filter");
+    // // console.log(filterSelect)
+    
+
+    // filterSelect.addEventListener("change", () => {
+    //     let filtered = arr.filter((element) => {
+    //         if (element.description === filterSelect.value) {
+    //             return true;
+    //         } else {
+    //             return false;
+    //         }
+    //     })
+    //     renderData(filtered);
+    //     console.log(filtered)
+
+    // })
+
+
+
+    // console.log(container)
+
+
+    // fetch('https://63c7bcdd5c0760f69abce598.mockapi.io/products')
+    //     .then(response => response.json())
+
+    //     .then((data) => {
+    //         // console.log(data)
+    //         arr = data
+    //         renderData(data)
+    //         console.log(arr)
+    //     })
+
+    //     .catch(error =>
+    //         console.error(error));
+
+
+    // function renderData(data) {
+    //     container.innerHTML = null;
+
+    //     data.forEach((element, index) => {
+
+    //         let card = document.createElement("div")
+
+    //         // let id = document.createElement("h3");
+    //         // id.textContent = element.id;
+
+    //         let img = document.createElement("img")
+    //         img.src = element.avatar
+
+    //         let description = document.createElement("p")
+    //         description.textContent = element.description;
+
+    //         let title = document.createElement("h3")
+    //         title.textContent = element.title;
+
+    //         let price = document.createElement("h4")
+    //         price.textContent = element.price;
+
+    //         let addToCart = document.createElement("button");
+    //         addToCart.innerText = "Add To Cart";
+
+    //         addToCart.addEventListener("click", () => {
+
+    //             //old data
+
+    //             let cartData = JSON.parse(localStorage.getItem("cart")) || []
+
+    //             // if(cartData === null) cartData = [];
+
+    //             let isAdleadyInCart = false;
+    //             for (let i = 0; i < cartData.length; i++) {
+    //                 if (cartData[i].id === element.id) {
+    //                     isAdleadyInCart = true;
+    //                     break;
+    //                 };
+    //             }
+
+    //             if (isAdleadyInCart === true) {
+    //                 alert("Product Already in Cart");
+    //             } else {
+    //                 cartData.push({ ...element, quantity: 1 });
+    //                 localStorage.setItem("cart", JSON.stringify(cartData));
+    //                 alert("Product Added To Cart");
+    //             }
+    //         })
+
+    //         card.append(img, description, title, price, addToCart)
+    //         container.append(card)
+    //     })
+
+    // }
+    
+</script>
