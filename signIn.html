@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My fitness</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <style>
+        .signUp {
+            width: 100%;
+            height: 100%;
+        }
+
+        .form {
+            width: 380px;
+            height: 480px;
+            position: relative;
+            margin: 2% auto;
+            background-color: #F5F5F5;
+            padding: 5px;
+            overflow: hidden;
+        }
+
+        .btn-box {
+            width: 220px;
+            margin: 35px auto;
+            position: relative;
+            box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+            border-radius: 30px;
+        }
+
+        .btn {
+            padding: 10px 30px;
+            cursor: pointer;
+            background-color: transparent;
+            border: 0;
+            outline: none;
+            position: relative;
+        }
+
+        #bot {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 110px;
+            height: 100%;
+            background: linear-gradient(to right, #64B5F6, #00BCD4);
+            border-radius: 30px;
+            transition: .5s;
+        }
+
+        .icons {
+            margin: 20px;
+            text-align: center;
+        }
+
+  
+
+        .input {
+            top: 180px;
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px 0;
+            margin: 5px 0;
+            border-left: 0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 1px solid #999;
+            outline: none;
+            background: transparent;
+        }
+
+        .submit-btn {
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background: linear-gradient(to right, #64B5F6, #00BCD4);
+            border: 0;
+            outline: none;
+            border-radius: 30px;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        .check-box {
+            margin: 10px 30px 10px 30px 0;
+            padding: 20px;
+        }
+
+        span {
+            color: #777;
+            font-size: 12px;
+            bottom: 68px;
+            padding: 3%;
+        }
+
+        #login {
+            left: 50px;
+        }
+
+        #register {
+            left: 450px;
+        }
+        #Display-msg{
+            text-align: center;
+            margin: 10px;
+            font-size: 13px;
+            font-weight: 200;
+            display: none;
+        }
+        #botText{
+            text-align: center;
+            display: none;
+             margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="border">
+        <a href="#">Sale up to 70% Off | Shop Now</a>
+    </div>
+    <!-- nav part -->
+    <div class="nav">
+        <img src="./tool image.png" alt="image">
+
+        <div class="search" style="display: flex;">
+            <div><input type="text" placeholder="search" ></div>
+            <div><i  class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-sharp fa-regular fa-user"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+      <div class="register">
+        <img src="https://media.istockphoto.com/id/1281150061/vector/register-account-submit-access-login-password-username-internet-online-website-concept.jpg?s=612x612&w=0&k=20&c=9HWSuA9IaU4o-CK6fALBS5eaO1ubnsM08EOYwgbwGBo=" alt="image">
+      </div>
+
+      <!-- login page -->
+      <div class="signUp">
+        <div class="form">
+            <div class="btn-box">
+                <div id="bot"></div>
+                <button type="button" class="btn" onclick="login()">Log In</button>
+                <button type="button" class="btn" onclick="register()">Register</button>
+            </div>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google"></i>
+            </div>
+            <form id="login" class="input">
+                <input id="userId" type="email" class="input-field" placeholder="User Id" required>
+                <input id="userPassword" type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button id="login-btn" type="submit" class="submit-btn">Log in</button>
+                <p id="Display-msg"></p>
+            </form>
+            <form id="register" class="input">
+                <input id="name" type="text" class="input-field" placeholder="User Id" required>
+                <input id="email" type="email" class="input-field" placeholder="Email Id" required>
+                <input id="password" type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+                <p id="botText">Account Created</p>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
+<script src="./index.js"></script>
