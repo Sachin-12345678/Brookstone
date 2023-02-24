@@ -75,10 +75,8 @@
     text-align: center;
     margin: auto;
     cursor: pointer;
-}
-
-.drop:hover{
-    text-decoration: underline;
+    /* white-space: nowrap;
+    overflow: auto; */
 }
 
 .dropdown {
@@ -93,6 +91,8 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  margin-top: 10px;
+  
 }
 
 .dropdown-content a {
@@ -105,7 +105,10 @@
 .ok{
     display: flex;
     gap: 50px;
+    /* border: 1px solid red; */
+    /* margin-top: 20px; */
 }
+
 
 .dropdown-content a:hover {background-color: #ddd;}
 
@@ -289,6 +292,7 @@ button{
 .p1{
     text-align: center;
     margin-top: 15px;
+    font-size: 15px;
 }
 
 .p2{
@@ -329,7 +333,7 @@ h5{
     width: 95%;
     margin: auto;
     margin-top: 45px;
-    height: 230px;
+    height: 210px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 40px;
@@ -356,3 +360,116 @@ h5{
     width: 100%;
 }
 /* ********home page end********** */
+
+/* **********footer start here*********** */
+.footer{
+    border: 1px solid #50514f;
+    width: 100%;
+    height: 500px;
+    margin-top: 80px;
+    background-color: #50514f;
+}
+.cont1{
+   width: 90%;
+   height: 400px;
+   margin-top: 80px;
+   margin-left: 50px;
+   display: flex;
+}
+
+.b1{
+    width: 30%;
+}
+.b2{
+    width: 70%;
+}
+
+h2{
+ color: white;
+}
+
+.para{
+    color: white;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.but{
+    height: 45px;
+    width: 70%;
+    background-color: #65c297;
+    cursor: pointer;
+    margin-top: 40px;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 3px;
+    border-radius: 8px;
+}
+
+.ic{
+    margin-top: 25px;
+}
+
+.ic>a:hover{
+    filter: invert(1);
+}
+
+.ic>a{
+    padding: 2px;
+    font-size: 33px;
+    color: white;
+}
+
+.p4{
+    color: white;
+    margin-top: 35px;
+    font-weight: 0;
+    font-size: 11px;
+}
+
+.line{
+    border: 1px solid white;
+    height: 78%;
+}
+
+.but1{
+    height: 60px;
+    border-radius: 12px;
+    width: 85%;
+    background-color: rgb(236, 152, 61);
+    color: black;
+    margin-left: 60px;
+    font-size: 17px;
+}
+
+span{
+    text-decoration: underline;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.last{
+    height: 280px;
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 60px;
+    display: flex;
+}
+.last>div{
+    width: 100%;
+}
+
+.res{
+    color: white;
+    margin-left: -20;
+}
+
+.p3{
+    font-size: 14px;
+    font-weight: bolder;
+}
+p{
+    font-size: 13px;
+    margin-top: 11px;
+}
+/* **********footer end here********** */
