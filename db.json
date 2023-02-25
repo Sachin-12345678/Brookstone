@@ -1,0 +1,9 @@
+{
+    "posts": [
+      { "id": 1, "title": "json-server", "author": "typicode","image":"https://m.media-amazon.com/images/I/81mUWnDU2DL._SX425_.jpg" }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }
