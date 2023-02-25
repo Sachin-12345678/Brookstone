@@ -52,11 +52,26 @@
             transition: .5s;
         }
 
-        .icons {
-            margin: 20px;
-            text-align: center;
+        .social_icons {
+           width: 60%;
+           margin-left: 130px;
+        }
+        .social_icons>i{
+            margin-left: 10px;
+            font-size: 20px;
         }
 
+        .social_icons>i:nth-child(1) {
+            color: #1565C0;
+        }
+
+        .social_icons>i:nth-child(2) {
+            color: #03A9F4;
+        }
+
+        .social_icons>i:nth-child(3) {
+            color: #0288D1;
+        }
   
 
         .input {
@@ -123,6 +138,14 @@
             display: none;
              margin-top: 20px;
         }
+        .main_page{
+            width: 100%;
+            display: flex;
+        }
+        .signUp{
+            width: 60%;
+        }
+
     </style>
 </head>
 <body>
@@ -133,30 +156,26 @@
     <div class="nav">
         <img src="./tool image.png" alt="image">
 
-        <div class="search" style="display: flex;">
-            <div><input type="text" placeholder="search" ></div>
-            <div><i  class="fa-solid fa-magnifying-glass"></i></div>
-        </div>
-
         <div class="icons">
             <i class="fa-sharp fa-regular fa-user"></i>
             <i class="fa-regular fa-heart"></i>
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
     </div>
+    <div  class="main_page" >
       <div class="register">
         <img src="https://media.istockphoto.com/id/1281150061/vector/register-account-submit-access-login-password-username-internet-online-website-concept.jpg?s=612x612&w=0&k=20&c=9HWSuA9IaU4o-CK6fALBS5eaO1ubnsM08EOYwgbwGBo=" alt="image">
       </div>
-
-      <!-- login page -->
-      <div class="signUp">
+<!-- ======================================================= -->
+    <!-- login page -->
+    <div class="signUp">
         <div class="form">
             <div class="btn-box">
                 <div id="bot"></div>
                 <button type="button" class="btn" onclick="login()">Log In</button>
                 <button type="button" class="btn" onclick="register()">Register</button>
             </div>
-            <div class="icons">
+            <div class="social_icons">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-google"></i>
@@ -179,6 +198,86 @@
         </div>
 
     </div>
+    </div>
+
 </body>
-</html>
-<script src="./index.js"></script>
+<script>
+   
+
+    function register() {
+        loginEl.style.left = "-400px"
+        registerEl.style.left = "50px"
+        buttonEl.style.left = "110px"
+    }
+    function login() {
+        loginEl.style.left = "50px"
+        registerEl.style.left = "450px"
+        buttonEl.style.left = "0px"
+    }
+    let loginEl = document.getElementById("login");//form
+    let registerEl = document.getElementById("register");
+    let buttonEl = document.getElementById("bot");
+    //    LS part
+    let UserName = document.getElementById("name");
+    let UserEmail = document.getElementById("email");
+    let UserPassword = document.getElementById("password");
+    let submitEl = document.querySelector(".submit-btn");
+    let bottom_text = document.getElementById("botText")
+
+    registerEl.addEventListener("submit", (e) => {
+        e.preventDefault();
+        
+            let myData = JSON.parse(localStorage.getItem("account-data"))||[];
+            let formData = {
+                name: UserName.value,
+                email: UserEmail.value,
+                password: UserPassword.value,
+            };
+            myData.push(formData)
+          
+            localStorage.setItem("account-data", JSON.stringify(myData));
+          
+            ResetData();
+        });
+        // console.log("hi")
+   
+// login part
+
+     let user_id = document.getElementById("userId");
+     let user_pass = document.getElementById("userPassword");
+     let login_btn = document.getElementById("login-btn");
+     let display_msg = document.getElementById("Display-msg")
+     loginEl.addEventListener("submit",(e)=>{
+        e.preventDefault();
+        
+     })
+     let loginData = JSON.parse(localStorage.getItem("account-data"))||[];
+
+     function display(data){
+        login_btn.addEventListener("click",()=>{
+            data.forEach((element,index)=>{
+        if(element.email ===user_id.value && element.password === user_pass.value){
+           display_msg.style.display="block";
+           display_msg.innerText="Login Sucessful";
+           display_msg.style.color="green";
+           
+        }else{
+            display_msg.style.display="block";
+            display_msg.innerText="Wrong Credential"
+            display_msg.style.color="red";
+        }
+    
+       })
+      display(loginData);
+        })
+     }
+     display(loginData)
+
+     function ResetData(){
+        UserName.value = ""
+        UserEmail.value = ""
+        UserPassword.value= ""
+        bottom_text.style.display="block"
+        bottom_text.style.color="green";
+     }
+</script>
