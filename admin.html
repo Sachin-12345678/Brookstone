@@ -6,12 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
     <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
 </head>
 <body>
+    <div class="border">
+        <a href="#">Sale up to 70% Off | Shop Now</a>
+    </div>
+    <!-- nav part -->
     <div class="nav">
-        <!-- logo -->
-        <h2>Master Admin</h2>
-        <a href=""><span id="profile"><ion-icon name="person-circle-outline"></ion-icon></span></a>
+        <img src="logo.png" alt="image">
+        <div class="search" style="display: flex;">
+            <div><input type="text" placeholder="search" ></div>
+            <div><i  class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-sharp fa-regular fa-user"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
     </div>
     <div class="main">
         <div class="left">
@@ -23,7 +37,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/products.html">
+                    <a href="/admin_manage.html">
                         <span class="icon"><ion-icon name="bag-handle-outline"></ion-icon></span>
                         <span class="title">Manage Products</span> 
                     </a>                    
@@ -40,8 +54,9 @@
         <div class="right">
             <div class="menu icon">
                 <ion-icon name="menu-outline"></ion-icon>
+                <span id="heading">Dashboard</span>
             </div>            
-            <h3>Dashboard</h3>
+            
             <div class="upper">
                 <div class="card">
                     <div>
@@ -55,7 +70,7 @@
                 <div class="card">
                     <div>
                         <h2>100</h2>
-                        <p>Sales</p>
+                        <p>Total Items</p>
                     </div>
                     <div>
                         <ion-icon name="cart-outline"></ion-icon>
@@ -64,7 +79,7 @@
                 <div class="card">
                     <div>
                         <h2>100</h2>
-                        <p>Comments</p>
+                        <p>Total Customers</p>
                     </div>
                     <div>
                         <ion-icon name="chatbubble-outline"></ion-icon>
@@ -72,7 +87,7 @@
                 </div>
                 <div class="card">
                     <div>
-                        <h2>100</h2>
+                        <h2 id="tolAmt">100</h2>
                         <p>Earning</p>
                     </div>
                     <div>
