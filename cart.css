@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+#cart-item{
+    border-color: whitesmoke;
+}
+#body-div{
+    width: 70%;
+    background-color: white;
+    margin-left: 40px;
+}
+
+#cart-item{
+    width: 100%;
+    background-color: white;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+    margin: 10px;
+    margin-left: 40px;
+    background-color: white;
+}
+#shop{
+    padding-top: 10px;
+    font-size:30px;
+}
+#price-head{
+    padding-top: 12px;
+    padding-right: 180px;
+    font-size: 25px;
+}
+#hr{
+   height: 1px;
+   background-color: rgb(209, 207, 207);
+   margin: 10px;
+   
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.img-div{
+    background-color: blue;   
+}
+.img-div>img{
+    height: 100px;
+}
+button{
+    border: none;
+    margin-right: 15px;
+    background-color: white;
+    color: rgb(9, 150, 150);
+    font-size: 13px;
+}
+
+.desc-div{
+   width: 40%;
+   margin-left: 50px;
+}
+.desc-div h4,.desc-div p,.desc-div >div{
+    margin: 5px;
+}
+.desc-div>button{
+    margin-top: 30px;
+}
+.price-div{
+    margin-left: 200px;
+    text-align: left;
+    color: rgb(117, 115, 115);
+}
+.price{
+   
+}

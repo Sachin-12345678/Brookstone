@@ -1,0 +1,22 @@
+{
+  "name": "fluttering-food-2084",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cart.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sachin-12345678/fluttering-food-2084.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sachin-12345678/fluttering-food-2084/issues"
+  },
+  "homepage": "https://github.com/Sachin-12345678/fluttering-food-2084#readme",
+  "dependencies": {
+    "json-server": "^0.17.2"
+  }
+}
