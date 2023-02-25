@@ -56,19 +56,21 @@ function display(pdata) {
     let edit = document.createElement("button");
     edit.innerText = "Edit";
     edit.classList.add("edit");
-    edit.addEventListener("click",(e)=>{
-      e.preventDefault();
+    edit.addEventListener("click",()=>{
       titleIn.value=element.title;
       categoryIn.value=element.description;
       urlIn.value=element.avatar;
       priceIn.value=element.price
-      editProd(element.id,titleIn.value,categoryIn.value,priceIn.value,urlIn.value)
+      let updatebtn=document.getElementById("update")
+      updatebtn.addEventListener("click",(e)=>{
+        e.preventDefault();
+        updateProd(element.id,titleIn.value,categoryIn.value,priceIn.value,urlIn.value)
+      }) 
     })
 
     td5.append(del, edit);
     tr.append(td1, td2, td3, td4, td5);
     tproducts.append(tr);
-
    
   });
 }
@@ -79,36 +81,60 @@ let categoryIn=document.getElementById("category");
 let priceIn=document.getElementById("price");
 let urlIn=document.getElementById("url");
 
-let formData=document.querySelector("form")
-formData.addEventListener("submit",(e)=>{
+let addBtn=document.getElementById("new")
+addBtn.addEventListener("click",(e)=>{
   e.preventDefault();
   let title=titleIn.value;
   let category=categoryIn.value;
   let price=priceIn.value;
   let url=urlIn.value;
-  console.log(title,category)
   addProd(title,category,price,url)
 })
 
-function addProd(title,category,price,url){
-  fetch((api),{
-    method:'POST',
+//update Products------------->
+function updateProd(id,title,category,price,url){
+  fetch(`${api}/${id}`,{
+    method:'PUT',
     body:JSON.stringify({
       title:title,
-      description:category,
       price:price,
-      avatar:url
+      avatar:url,
+      description:category
     }),
     headers:{
       'Content-type':'application/json'
     }
   })
   .then((req)=>req.json())
-  .then((data)=>{
-    console.log(data)
-    fetchData();   
-    alert("Product Added Successfully")
+  .then(()=>{
+    fetchData();
+    console.log("updated")
+    alert("Updated Successfully")
   })
+}
+
+//Add function------------->
+
+function addProd(title,category,price,url){
+   
+    fetch((api),{
+      method:'POST',
+      body:JSON.stringify({
+        title:title,
+        description:category,
+        price:price,
+        avatar:url
+      }),
+      headers:{
+        'Content-type':'application/json'
+      }
+    })
+    .then((req)=>req.json())
+    .then(()=>{
+      fetchData();   
+      console.log("new")
+      alert("Product Added Successfully")
+    })  
 }
 // Delete function-------------->
 function delProd(id){
@@ -125,23 +151,8 @@ function delProd(id){
   })
 }
 
-// Edit function --------------->
-function editProd(id,titleIn,categoryIn,priceIn,urlIn){
-  console.log("Edited")
-  fetch(`${api}/${id}`,{
-    method:'PUT',
-    body:JSON.stringify({
-      title:titleIn,
-      price:priceIn,
-      avatar:urlIn,
-      description:categoryIn
-    }),
-    headers:{
-      'Content-type':'application/json'
-    }
-  })
-  .then((req)=>req.json())
-  .then(()=>{
-    alert("Updated Successfully")
-  })
-}
+// // Pagination code --------------->
+
+window.addEventListener("load",()=>{
+  
+})

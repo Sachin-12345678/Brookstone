@@ -8,10 +8,22 @@
     <link rel="stylesheet" href="admin.css">
 </head>
 <body>
+    <div class="border">
+        <a href="#">Sale up to 70% Off | Shop Now</a>
+    </div>
+    <!-- nav part -->
     <div class="nav">
-        <!-- logo -->
-        <h2>Master Admin</h2>
-        <a href=""><span id="profile"><ion-icon name="person-circle-outline"></ion-icon></span></a>
+        <img src="logo.png" alt="image">
+        <div class="search" style="display: flex;">
+            <div><input type="text" placeholder="search" ></div>
+            <div><i  class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-sharp fa-regular fa-user"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
     </div>
     <div class="main">
         <div class="left">
@@ -23,7 +35,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/products.html">
+                    <a href="/admin_manage.html">
                         <span class="icon"><ion-icon name="bag-handle-outline"></ion-icon></span>
                         <span class="title">Manage Products</span> 
                     </a>                    
@@ -39,10 +51,11 @@
             
         </div>
         <div class="right">
-            <div class="menu icon">
-                <ion-icon name="menu-outline"></ion-icon>
+            <div >
+                <ion-icon class="menu icon" name="menu-outline"></ion-icon>
+                <span id="heading">Manage Products</span>
             </div> 
-            <h3>Manage Products</h3>
+
             <div class="mainSec">
                 
                 <div class="formfill">
@@ -63,7 +76,9 @@
                         <input type="text" id="price" placeholder="Enter Price.." />
                         <label for="">Image URL</label>
                         <input type="text" id="url" placeholder="URL" />
-                        <button>Submit</button>
+                        <button id="new">Add</button>
+                        <button id="update">Update</button>
+                       
                       </form>
                 </div>      
                
@@ -91,7 +106,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
-    <script src="/products.js"></script>
+    <script src="/admin_manage.js"></script>
 
 
 

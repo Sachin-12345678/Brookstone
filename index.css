@@ -65,17 +65,16 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   margin-top: 10px;
-  border: 1px solid red;
 }
 
 
 .icons{
-    margin-right: 25px;
+    margin-right: 30px;
 }
 
 .icons>a{
     width: 15%;
-    font-size: 25px;
+    font-size: 22px;
     margin-left: 13px;
     color: black;
 }
@@ -107,7 +106,6 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   margin-top: 10px;
-  border: 1px solid red;
 }
 
 .dropdown-content a {

@@ -42,37 +42,37 @@ function slideRight(event){
 window.onload=setWidth;
 
 
-let url="https://63c7bcdd5c0760f69abce598.mockapi.io/products"
+// let url="https://63c7bcdd5c0760f69abce598.mockapi.io/products"
 
-fetch(`${url}`)
-.then((res)=>{
-  return res.json()
-})
-.then((data)=>{
-  console.log(data)
-})
-.catch((err)=>{
-  console.log(err);
-})
-
-
+// fetch(`${url}`)
+// .then((res)=>{
+//   return res.json()
+// })
+// .then((data)=>{
+//   console.log(data)
+// })
+// .catch((err)=>{
+//   console.log(err);
+// })
 
 
-let searchbtn=document.getElementById("search-btn");
-let search=document.getElementById("search1");
-searchbtn.addEventListener("click", ()=>{
-  let value=search.value;
-  let url1=`https://63c7bcdd5c0760f69abce598.mockapi.io/products/?description=${value}`
 
-fetch(`${url1}`)
-.then((res)=>{
-  return res.json()
-})
-.then((data)=>{
-  console.log(data)
-})
-.catch((err)=>{
-  console.log(err);
-})
 
-})
+// let searchbtn=document.getElementById("search-btn");
+// let search=document.getElementById("search1");
+// searchbtn.addEventListener("click", ()=>{
+//   let value=search.value;
+//   let url1=`https://63c7bcdd5c0760f69abce598.mockapi.io/products/?description=${value}`
+
+// fetch(`${url1}`)
+// .then((res)=>{
+//   return res.json()
+// })
+// .then((data)=>{
+//   console.log(data)
+// })
+// .catch((err)=>{
+//   console.log(err);
+// })
+
+// })
