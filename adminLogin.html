@@ -47,7 +47,7 @@
             position: absolute;
             width: 110px;
             height: 100%;
-            background: linear-gradient(to right, #64B5F6, #00BCD4);
+            background: linear-gradient(to right,  #B39DDB, #BA68C8);
             border-radius: 30px;
             transition: .5s;
         }
@@ -100,7 +100,7 @@
             cursor: pointer;
             display: block;
             margin: auto;
-            background: linear-gradient(to right, #64B5F6, #00BCD4);
+            background: linear-gradient(to right, #42A5F5, #BA68C8);
             border: 0;
             outline: none;
             border-radius: 30px;
@@ -111,6 +111,7 @@
         .check-box {
             margin: 10px 30px 10px 30px 0;
             padding: 20px;
+           
         }
 
         span {
@@ -129,7 +130,7 @@
         }
         #Display-msg{
             text-align: center;
-            margin: 10px;
+            margin-bottom: 20px;
             font-size: 13px;
             font-weight: 600;
             display: none;
@@ -146,7 +147,7 @@
         .signUp{
             width: 60%;
         }
-        #ad_btn{
+        #us_btn{
            width: 10%;
            border-radius: 3px;
            padding: 8px;
@@ -157,11 +158,11 @@
            font-weight: 540;
            font-family: sans-serif;
         }
-        #ad_btn:hover{
-          color: #00ACC1;
+        #us_btn:hover{
+          color: #AD1457;
           background-color: #E0E0E0;
         }
-
+      
     </style>
 </head>
 <body>
@@ -171,7 +172,8 @@
     <!-- nav part -->
     <div class="nav">
         <img src="./tool image.png" alt="image">
-       <a href="./adminLogin.html"><button id="ad_btn">Admin Login</button></a> 
+        <a href="./signIn.html"><button id="us_btn">User Login</button></a> 
+
         <div class="icons">
             <i class="fa-sharp fa-regular fa-user"></i>
             <i class="fa-regular fa-heart"></i>
@@ -180,7 +182,7 @@
     </div>
     <div  class="main_page" >
       <div class="register">
-        <img src="https://media.istockphoto.com/id/1281150061/vector/register-account-submit-access-login-password-username-internet-online-website-concept.jpg?s=612x612&w=0&k=20&c=9HWSuA9IaU4o-CK6fALBS5eaO1ubnsM08EOYwgbwGBo=" alt="image">
+        <img src="https://thumbs.dreamstime.com/b/admin-login-blue-gradient-concept-icon-administrator-account-learning-management-system-access-abstract-idea-thin-line-265524625.jpg" alt="image">
       </div>
 <!-- ======================================================= -->
     <!-- login page -->
@@ -204,7 +206,7 @@
                 <input id="userPassword" type="password" class="input-field" placeholder="Enter Password" required>
                 <input type="checkbox" class="check-box"><span>Remember Password</span>
                 <button id="login-btn" type="submit" class="submit-btn">Log in</button>
-               
+                
             </form>
             <form id="register" class="input">
                 <div>
@@ -215,15 +217,11 @@
                 <input id="password" type="password" class="input-field" placeholder="Enter Password" required>
                 <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
                 <button type="submit" class="submit-btn">Register</button>
-
-               
+                
             </form>
-
-            
         </div>
-           
+
     </div>
-         
     </div>
 
 </body>
@@ -286,17 +284,17 @@
            display_msg.style.display="block";
            display_msg.innerText="Login Sucessful";
            display_msg.style.color="green";
-           
-           setTimeout(() => {
-        window.location.assign("index.html")
-      }, 3000);
 
+           setTimeout(() => {
+        window.location.assign("admin.html")
+      }, 3000);
+           
         }else{
             display_msg.style.display="block";
             display_msg.innerText="Wrong Credential"
             display_msg.style.color="red";
         }
-      
+    
        })
       display(loginData);
         })
