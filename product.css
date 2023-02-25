@@ -4,7 +4,30 @@
 } */
 
 
-
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+    /* Other styles for smaller screens */
+  }
+  
+  /* For screens between 600px and 900px */
+  @media (min-width: 600px) and (max-width: 900px) {
+    body {
+      font-size: 16px;
+    }
+    /* Other styles for medium screens */
+  }
+  
+  /* For screens larger than 900px */
+  @media (min-width: 900px) {
+    body {
+      font-size: 18px;
+    }
+    /* Other styles for larger screens */
+  }
+  
 #container {
     margin-top: 25px;
     width: 90%;
