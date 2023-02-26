@@ -23,9 +23,12 @@ function fetchData() {
 }
 
 let tproducts = document.querySelector(".tproducts");
+let tolItm=document.getElementById("tolItm");
+let tolAmt=document.getElementById("tolAmt")
 
 function display(pdata) {
   tproducts.innerHTML = null;
+  tolItm.innerText=pdata.length;
   pdata.forEach((element) => {
     let tr = document.createElement("tr");
 

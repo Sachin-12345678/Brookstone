@@ -240,14 +240,15 @@ body{
     overflow: scroll;
 }
 .table11{
-    width: 70%;
+    width: 73%;
+    /* border: solid red; */
     transition: 0.5s;
     /* border: solid red; */
     height: 650px;
     overflow: scroll;
 }
 .table1.active{
-    width: 70%;
+    width: 60%;
     padding-left: 30px;
     transition: 0.5s;
     height: 650px;
@@ -262,16 +263,18 @@ body{
     overflow: scroll;
     /* border: solid red; */
 }
-.table21{
+.table12{
     /* border:solid red; */
-    padding-left: 50px;
+    padding-left: 20px;
+    width: 20%;
     transition: 0.5s;
     height: 650px;
 }
 tbody td{
     
     background-color: #E3DFFD;
-    padding: 10px;
+    padding-left: 30px;
+    padding-right:30px ;
     border-radius: 5px;
 }
 thead td{
