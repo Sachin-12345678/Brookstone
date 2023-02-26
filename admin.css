@@ -193,8 +193,9 @@ body{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
       rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border-radius: 10px;
-    background-color: #BAD7E9;
-    color: #2B3467;
+    background-color: #8fc3ed;
+    font-weight: bold;
+    /* color: white; */
     /* border: solid red; */
     height: 0%;
   }
@@ -263,7 +264,7 @@ body{
 }
 .table21{
     /* border:solid red; */
-    padding-left: 30px;
+    padding-left: 50px;
     transition: 0.5s;
     height: 650px;
 }
