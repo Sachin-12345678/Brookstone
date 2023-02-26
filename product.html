@@ -7,170 +7,370 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrookTool</title>
     <link rel="stylesheet" href="product.css">
-    <style>
-        /* #container {
-            width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-gap: 10px;
-
-        }
-
-        #container div {
-            /* border: 10px solid red; */
-            /* width: 100%;
-        } */
-
-        /* #container div img {
-            width: 100%;
-        } */ 
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 
 <body>
-
-    <label for="price" id="sort">
-        <button id="high">high-to-low</button>
-        <button id="low">Low-to-high</button>
-
-    </label>
-
-
-
-    <select id="filter">
-        <option value="">Filter By Category</option>
-        <option value="Kitchen">Kitchen</option>
-        <option value="Lighting">Lighting</option>
-        <option value="Furniture">Furniture</option>
-        <option value="Bathroom">Bathroom</option>
-        <option value="Air Quality">Air Quality</option>
-        <option value="Home Products">Home Products</option>
-        <option value="Pet">Pet</option>
-    </select>
-
-    <div id="container">
+    <!-- *********header start here******** -->
+    <div class="border">
+        <a href="#">Sale up to 70% Off | Shop Now</a>
     </div>
+    <!-- nav part -->
+    <div class="nav">
+        <img src="./logo.png" alt="image">
+
+        <div class="search" style="display: flex;">
+            <div><input type="text" placeholder="search" id="search1"></div>
+            <div id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="display">
+              
+            </div>
+        </div>
+
+        <div class="icons">
+            <a href="/signIn.html"><i class="fa-sharp fa-regular fa-user"></i></a>
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
+
+    <div class="drop">
+        <div>New</div>
+         <div class="dropdown">
+           <div>Massage</div>
+            <div class="dropdown-content">
+              <div class="ok">
+                  <div>
+                    <a href="#">Massage Chairs</a>
+                    <a href="#">Eye</a>
+                    <a href="#">Foot & Leg</a>
+                    </div>
+                    <div>
+                    <a href="#">Massage Guns</a>
+                    <a href="#">Hand</a>
+                    <a href="#">Intimate</a>
+                    </div>
+                    <div>
+                      <a href="#">Neck & Back</a>
+                      <a href="#">Roller</a>
+                      <a href="#">Seat Topper</a>
+                      </div>
+                    <div>
+                      <a href="#">Best Sellers</a>
+                      <a href="#">View All</a>
+                   </div>
+                   <div class="im">
+                      <img src="https://cdn.shopify.com/s/files/1/0262/2226/4423/files/Bath.jpg?v=1657922268" alt="">
+                      <p>Bath</p>
+                   </div>
+              </div>
+            </div>
+        </div>
+        <div class="dropdown">
+          <div>Wellness</div>
+          <div class="dropdown-content">
+              <div class="ok">
+                  <div>
+                    <a href="#">Cold & Heat Therapy</a>
+                    <a href="#">Comfort</a>
+                    <a href="#">Cleansers & Serums</a>
+                    </div>
+                    <div>
+                    <a href="#">Cupping</a>
+                    <a href="#">Eye Care</a>
+                    <a href="#">Hair Care</a>
+                    </div>
+                    <div>
+                      <a href="#">Meditation</a>
+                      <a href="#">Skin Care</a>
+                      <a href="#">Sound Machines</a>
+                      </div>
+                    <div>
+                      <a href="#">Best Sellers</a>
+                      <a href="#">View All</a>
+                   </div>
+                   <div class="im">
+                      <img src="https://cdn.shopify.com/s/files/1/0262/2226/4423/files/skin.jpg?v=1657922635" alt="">
+                      <p>Skin Care</p>
+                   </div>
+              </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div>Sleep</div>
+          <div class="dropdown-content">
+              <div class="ok">
+                  <div>
+                    <a href="#">Air Quality</a>
+                    <a href="#">Alarms</a>
+                    <a href="#">Bedding</a>
+                    </div>
+                    <div>
+                    <a href="#">Clocks</a>
+                    <a href="#">Comfort</a>
+                    <a href="#">Mattress</a>
+                    </div>
+                    <div>
+                      <a href="#">Pillows</a>
+                      <a href="#">Intimate Pillow</a>
+                      <a href="#">Sound Machines</a>
+                      </div>
+                    <div>
+                      <a href="#">Best Sellers</a>
+                      <a href="#">View All</a>
+                   </div>
+                   <div class="im">
+                      <img src="https://cdn.shopify.com/s/files/1/0262/2226/4423/files/pillow.jpg?v=1657922838" alt="">
+                      <p>Pillows</p>
+                   </div>
+              </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div>Home</div>
+          <div class="dropdown-content">
+              <div class="ok">
+                  <div>
+                    <a href="#">Kitchen</a>
+                    <a href="#">Air Quality</a>
+                    <a href="#">Bathroom</a>
+                    </div>
+                    <div>
+                    <a href="#">Furniture</a>
+                    <a href="#">Lighting</a>
+                    <a href="#">Home Products</a>
+                    </div>
+                    <div>
+                      <a href="#">Pet</a>
+                      <a href="#">Bedding</a>
+                      <a href="#">Outdoor</a>
+                      </div>
+                    <div>
+                      <a href="#">UV Sanitation</a>
+                      <a href="/product.html">View All</a>
+                   </div>
+                   <div class="im">
+                      <img src="https://cdn.shopify.com/s/files/1/0262/2226/4423/files/Lighting.jpg?v=1657923030" alt="">
+                      <p>Lighting</p>
+                   </div>
+              </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div>Wine & Bar</div>
+          <div class="dropdown-content">
+              <div class="ok">
+                  <div>
+                    <a href="#">Decanters</a>
+                    <a href="#">Gift Sets</a>
+                    </div>
+                    <div>
+                    <a href="#">Glassware</a>
+                    <a href="#">non-Glassware</a>
+                    </div>
+                    <div>
+                      <a href="#">Best Sellers</a>
+                      <a href="#">View All</a>
+                   </div>
+                   <div class="im">
+                      <img src="https://cdn.shopify.com/s/files/1/0262/2226/4423/files/Glassware.jpg?v=1657923201" alt="">
+                      <p>Glassware</p>
+                   </div>
+              </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div>Fitness</div>
+          <div class="dropdown-content">
+              <div class="ok">
+                  <div>
+                    <a href="#">Accessories</a>
+                    <a href="#">Connected Fitness</a>
+                    </div>
+                    <div>
+                    <a href="#">Yoga</a>
+                    <a href="#">View All</a>
+                    </div>
+                   <div class="im">
+                      <img src="https://cdn.shopify.com/s/files/1/0262/2226/4423/files/Accessories.jpg?v=1657930478" alt="">
+                      <p>Accessories</p>
+                   </div>
+              </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div>Outdoor</div>
+          <div class="dropdown-content">
+              <div class="ok">
+                  <div>
+                    <a href="#">E-Bikes</a>
+                    <a href="#">Decor</a>
+                    <a href="#">Furniture</a>
+                    <a href="#">Game day</a>
+                    </div>
+                    <div>
+                    <a href="#">Gardening</a>
+                    <a href="#">Lighting</a>
+                    <a href="#">Picnic</a>
+                    </div>
+                    <div>
+                      <a href="#">Scooters</a>
+                      <a href="#">View All</a>
+                   </div>
+              </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div>Technology</div>
+          <div class="dropdown-content">
+              <div class="ok">
+                  <div>
+                    <a href="#">Accessories</a>
+                    <a href="#">Audio</a>
+                    <a href="#">Clocks</a>
+                    </div>
+                    <div>
+                    <a href="#">Digital Cameras</a>
+                    <a href="#">Headphones</a>
+                    </div>
+                    <div>
+                      <a href="#">Speakers</a>
+                      <a href="#">Wearable Tech</a>
+                      <a href="#">View All</a>
+                   </div>
+              </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div>Travel</div>
+          <div class="dropdown-content">
+              <div class="ok">
+                  <div>
+                    <a href="#">Accessories</a>
+                    <a href="#">Luggage</a>
+                    </div>
+                    <div>
+                      <a href="#">View All</a>
+                   </div>
+              </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div>Accessories</div>
+          <div class="dropdown-content">
+              <div class="ok">
+                  <div>
+                    <a href="#">Keychains</a>
+                    <a href="#">Wallets</a>
+                    </div>
+                    <div>
+                      <a href="#">View All</a>
+                   </div>
+              </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div>Entertainment</div>
+          <div class="dropdown-content">
+            <a href="#">Toys</a>
+            <a href="#">Discovery</a>
+            <a href="#">Games</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div>Gift</div>
+        </div>
+        <div class="dropdown">
+          <div>Sale</div>
+        </div>
+    </div> 
+     
+   <!-- ******header end here******* -->
+
+    <p class="pk">Home / Home</p>
+
+    <div id="main">
+        <div class="right">
+            <label for="price" id="sort">
+                <button id="high">high-to-low</button>
+                <br>
+                <button id="low">Low-to-high</button>
+        
+            </label>
+
+            <select id="filter">
+                <option value="">Filter By Category</option>
+                <option value="Kitchen">Kitchen</option>
+                <option value="Lighting">Lighting</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Bathroom">Bathroom</option>
+                <option value="Air Quality">Air Quality</option>
+                <option value="Home Products">Home Products</option>
+                <option value="Pet">Pet</option>
+            </select>
+        </div>
+
+        <div class="left">
+            <div class="append">
+                <div id="container">
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- ********footer start here******** -->
+<div class="footer">
+    <div class="cont1">
+       <div class="b1">
+          <h2>Stay in the loop</h2>
+          <p class="para">Sign up and be the first to hear about <br> new products and promotions!</p>
+          <a href="#"><button class="but">SIGN UP NOW</button></a>
+ 
+          <div class="ic">
+           <a href="https://www.facebook.com/BrookstoneOnline/"><i class="fa-brands fa-facebook"></i></a>
+           <a href="https://www.instagram.com/brookstone/"><i class="fa-brands fa-instagram"></i></a>
+           <a href="https://www.youtube.com/user/OneInnovationWay"><i class="fa-brands fa-youtube"></i></a>
+           <a href="https://twitter.com/brookstone"><i class="fa-brands fa-twitter"></i></a>
+           <a href="https://www.pinterest.com/mybrookstone/"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+          <p class="p4">© Brookstone 2022</p>
+       </div>
+ 
+       <div class="line"></div>
+ 
+        <div class="b2">
+           <button class="but1">SHOP NOW, PAY LATER WITH Klarna. <span>Learn more</span></button>
+           
+           <div class="last">
+             <div class="res">
+                <p class="p3">SHOP BRROKSTONE.COM</p>
+                <P>Massage Chair Buyers Guide</P>
+                <P>FAQ</P>
+                <P>About Us</P>
+                <P>Shipping Info</P>
+                <P>Privacy Policy</P>
+                <P>Prop 65</P>
+                <P>Accessibility Statement</P>
+             </div>
+ 
+             <div>
+                 <div class="res">
+                    <p class="p3">CUSTOMER SERVICE</p>
+                    <P>Contact Us</P>
+                    <P>Return Policy</P>
+                    <P>Order Tracking</P>
+                    <P>Product Manuals</P>
+                    <P>Your California Privacy Rights</P>
+                    <P>Accessibility Mode</P>
+                 </div>
+           </div>
+       </div>
+    </div>
+ </div>
+ <!-- *************footer end here*********** -->
+
+
 </body>
 
 </html>
-<script src="product.js">
-    // let container = document.getElementById("container");
-
-    // let arr = [];
-
-    // let high = document.getElementById("high");
-
-
-    // high.addEventListener('click', () => {
-    //     container.innerHTML = null;
-    //     let hSort = arr.sort((a, b) => b.price - a.price);
-    //     renderData(hSort)
-
-    // })
-
-    
-    // let low= document.getElementById("low");
-
-
-    // low.addEventListener('click', () => {
-    //     container.innerHTML = null;
-    //     let lSort = arr.sort((a, b) => a.price - b.price);
-    //     renderData(lSort)
-
-    // })
-
-
-    // let filterSelect = document.getElementById("filter");
-    // // console.log(filterSelect)
-    
-
-    // filterSelect.addEventListener("change", () => {
-    //     let filtered = arr.filter((element) => {
-    //         if (element.description === filterSelect.value) {
-    //             return true;
-    //         } else {
-    //             return false;
-    //         }
-    //     })
-    //     renderData(filtered);
-    //     console.log(filtered)
-
-    // })
-
-
-
-    // console.log(container)
-
-
-    // fetch('https://63c7bcdd5c0760f69abce598.mockapi.io/products')
-    //     .then(response => response.json())
-
-    //     .then((data) => {
-    //         // console.log(data)
-    //         arr = data
-    //         renderData(data)
-    //         console.log(arr)
-    //     })
-
-    //     .catch(error =>
-    //         console.error(error));
-
-
-    // function renderData(data) {
-    //     container.innerHTML = null;
-
-    //     data.forEach((element, index) => {
-
-    //         let card = document.createElement("div")
-
-    //         // let id = document.createElement("h3");
-    //         // id.textContent = element.id;
-
-    //         let img = document.createElement("img")
-    //         img.src = element.avatar
-
-    //         let description = document.createElement("p")
-    //         description.textContent = element.description;
-
-    //         let title = document.createElement("h3")
-    //         title.textContent = element.title;
-
-    //         let price = document.createElement("h4")
-    //         price.textContent = element.price;
-
-    //         let addToCart = document.createElement("button");
-    //         addToCart.innerText = "Add To Cart";
-
-    //         addToCart.addEventListener("click", () => {
-
-    //             //old data
-
-    //             let cartData = JSON.parse(localStorage.getItem("cart")) || []
-
-    //             // if(cartData === null) cartData = [];
-
-    //             let isAdleadyInCart = false;
-    //             for (let i = 0; i < cartData.length; i++) {
-    //                 if (cartData[i].id === element.id) {
-    //                     isAdleadyInCart = true;
-    //                     break;
-    //                 };
-    //             }
-
-    //             if (isAdleadyInCart === true) {
-    //                 alert("Product Already in Cart");
-    //             } else {
-    //                 cartData.push({ ...element, quantity: 1 });
-    //                 localStorage.setItem("cart", JSON.stringify(cartData));
-    //                 alert("Product Added To Cart");
-    //             }
-    //         })
-
-    //         card.append(img, description, title, price, addToCart)
-    //         container.append(card)
-    //     })
-
-    // }
-    
-</script>
+<script src="product.js"></script>
