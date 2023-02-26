@@ -25,8 +25,8 @@
     margin-bottom: 20px;
    
 }
-.nav>img{
-    width: 10%;
+.nav> a >img{
+    width: 22%;
     margin-left: 20px;
 }
 /* .search{
