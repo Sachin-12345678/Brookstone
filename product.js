@@ -76,7 +76,7 @@ function renderData(data) {
         let description = document.createElement("p")
         description.textContent = element.description;
 
-        let title = document.createElement("h3")
+        let title = document.createElement("h4")
         title.textContent = element.title;
 
         let price = document.createElement("h4")
