@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: var(--fontFamily)
 }
 body{
     background-color: whitesmoke;
@@ -10,70 +9,55 @@ body{
     border-color: whitesmoke;
 }
 #body-div{
+    width: 70%;
     background-color: white;
     margin-left: 40px;
-    margin-right: 50px;
 }
-#save-div{
-    background-color: white;
-    margin-right: 43px;
-    margin-left: 40px;
-}
+
 #cart-item{
     width: 100%;
     background-color: white;
-    margin-bottom: 50px;
 }
 #header{
     display: flex;
     flex-direction: row;
-    /* width: 100%; */
     justify-content: space-between;
  
     margin: 10px;
-    /* margin-left: 40px; */
-    margin-top: 20px;
-    padding-top: 10px;
+    margin-left: 40px;
     background-color: white;
 }
-
 #shop{
     padding-top: 10px;
     font-size:30px;
 }
 #price-head{
     padding-top: 12px;
-    padding-right: 100px;
+    padding-right: 180px;
     font-size: 25px;
 }
-.hr{
+#hr{
    height: 1px;
    background-color: rgb(209, 207, 207);
    margin: 10px;
    
 }
-.card,.card1{
+.card{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    /* margin: 20px; */
-    margin-bottom: 30px;
+    margin: 20px;
 }
 .img-div{
-    width:18%
+    background-color: blue;   
 }
-
 .img-div>img{
     height: 100px;
-    width: 100%;
-    
 }
-
 button{
     border: none;
     margin-right: 15px;
     background-color: white;
-    color: #287bff;
+    color: rgb(9, 150, 150);
     font-size: 13px;
 }
 
@@ -81,70 +65,17 @@ button{
    width: 40%;
    margin-left: 50px;
 }
-.desc-div h4,.desc-div p,.desc-div >div,.desc-div1 h4,.desc-div1 p,.desc-div1>div{
+.desc-div h4,.desc-div p,.desc-div >div{
     margin: 5px;
 }
 .desc-div>button{
-    margin-top: 20px;
+    margin-top: 30px;
 }
-.price-div,.price-div1{
-    /* margin-left: 200px; */
-    text-align: center;
+.price-div{
+    margin-left: 200px;
+    text-align: left;
     color: rgb(117, 115, 115);
-    vertical-align:middle;
-    padding-top: 20px;
 }
-.incDcr{
- border: 2px solid whitesmoke;
- height: fit-content;
- margin-top: 10px;
- padding-left: 8px;
-}
-#save-head{
-    margin-left: 20px;
-    font-size: 23px;
-    padding-top: 10px;
-}
-.incDcr>button{
-    font-size: 25px;
-    padding-left: 6px;
-}
-.incDcr>.inc{
-    /* border: 2px solid red; */
-    text-align: center;
-    vertical-align: middle;
-    font-size: 23px;
-    margin-left: 5px;
-}
-.addTocart{
-    margin-top: 25px;
-    padding-left: 10px;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-#save-item{
-    margin-top: 10px;
-    margin-left: 40px;
-    background-color: white;
-    width: 80%;
-    padding-top: 50px;
-}
-#flex{
-    display: flex;;
-    flex-direction: row;
-    justify-content: space-between;
-}
-#cart-page{
-    width: 75%;
-}
-#price-head{
-    border: 1.5px solid #287bff;
-    color: #287bff;
-    align-items: left;
-    font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
-    padding: 12px 20px;
-    font-size: 15px;
-    font-weight: 500;
-
+.price{
+   
 }
