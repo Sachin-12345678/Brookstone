@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final</title>
+</head>
+<style>
+    .border{
+text-align: center;
+background-color: #64B5F6;
+padding: 4px;
+}
+.border>a{
+text-decoration: none;
+color: white
+}
+.nav img{
+width: 150px;
+margin: 20px 0px 0px 20px;
+}
+.icons{
+width: 9%;
+}
+.icons>i{
+width: 10%;
+font-size: 20px;
+margin-left: 17px;
+}
+.search{
+width: 40%;
+align-items: center;
+
+justify-content: space-between;
+}
+.search>div>input{
+width: 100%;
+padding: 6px;
+border-radius: 5px;
+}
+.search>div:nth-child(1){
+width: 100%;
+}
+.search>div:nth-child(2){
+position: relative;
+right: 5%;
+}
+.nav{
+width: 100%;
+height: 90px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+/* margin-top: 3px; */
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+/* margin-bottom: 20px; */
+}
+.done{
+    width: 30%;
+    margin: auto;
+}
+button{
+    padding: 20px;
+    background-color: #64B5F6;
+    border: none;
+    font-size: large;
+    color:white;
+    border-radius: 15px;
+    display: block;
+    margin:auto;
+}
+a{
+    text-decoration: none;
+}
+</style>
+<body>
+    <div class="border">
+        <a href="#">Sale up to 70% Off | Shop Now</a>
+    </div>
+    <div class="nav">
+        <!-- nav part -->
+        <div class="nav">
+            <a href="/index.html"><img src="logo.png" alt="image"></a>
+            <div class="search" style="display: flex;">
+                <div><input type="text" placeholder="search" ></div>
+                <div><i  class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+    
+            <div class="icons">
+                <i class="fa-sharp fa-regular fa-user"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </div>
+    <div class="done"><img src="https://cdni.iconscout.com/illustration/premium/thumb/order-confirmation-5365232-4500195.png" alt=""></div>
+    <a href="/index.html"><button >ORDER PLACED SUCCESSFULLY</button></a>
+</body>
+</html>
