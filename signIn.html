@@ -154,11 +154,11 @@
            font-size: 13px;
            cursor: pointer;
            margin-left: 870px;
-           font-weight: 540;
+           font-weight: 550;
            font-family: sans-serif;
         }
         #ad_btn:hover{
-          color: #00ACC1;
+          color: #C62828;
           background-color: #E0E0E0;
         }
 
@@ -175,7 +175,7 @@
         <div class="icons">
             <i class="fa-sharp fa-regular fa-user"></i>
             <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i id="cart" class="fa-solid fa-cart-shopping"></i>
         </div>
     </div>
     <div  class="main_page" >
@@ -279,17 +279,29 @@
      })
      let loginData = JSON.parse(localStorage.getItem("account-data"))||[];
 
+     let flag = 0;
+     let cart_btn = document.getElementById("cart");
+     cart_btn.addEventListener("click",()=>{
+        if(flag==1){
+            window.location.href = "./cart.html"
+        }else{
+            alert("Login First")
+        }
+       
+     })
+
      function display(data){
         login_btn.addEventListener("click",()=>{
+            flag=1
             data.forEach((element,index)=>{
         if(element.email ===user_id.value && element.password === user_pass.value){
            display_msg.style.display="block";
-           display_msg.innerText="Login Sucessful";
+           display_msg.innerText="Login Successful";
            display_msg.style.color="green";
-           
+          
            setTimeout(() => {
         window.location.assign("index.html")
-      }, 3000);
+      }, 2000);
 
         }else{
             display_msg.style.display="block";

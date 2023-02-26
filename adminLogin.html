@@ -155,14 +155,19 @@
            font-size: 13px;
            cursor: pointer;
            margin-left: 870px;
-           font-weight: 540;
+           font-weight: 550;
            font-family: sans-serif;
         }
         #us_btn:hover{
           color: #AD1457;
           background-color: #E0E0E0;
         }
-      
+        /* #cart{
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        } */
     </style>
 </head>
 <body>
@@ -171,13 +176,13 @@
     </div>
     <!-- nav part -->
     <div class="nav">
-        <img src="./tool image.png" alt="image">
+      <img src="./tool image.png" alt="image">
         <a href="./signIn.html"><button id="us_btn">User Login</button></a> 
 
         <div class="icons">
             <i class="fa-sharp fa-regular fa-user"></i>
             <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+           <i class="fa-solid fa-cart-shopping"></i>
         </div>
     </div>
     <div  class="main_page" >
@@ -276,7 +281,8 @@
         
      })
      let loginData = JSON.parse(localStorage.getItem("account-data"))||[];
-
+     
+     
      function display(data){
         login_btn.addEventListener("click",()=>{
             data.forEach((element,index)=>{
